@@ -2,8 +2,6 @@ package org.camunda.bpm.hcl.rbs.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,7 +9,7 @@ import javax.persistence.Table;
 @Table(name="t_breach_reporter")
 public class BreachReporter {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	//@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "breach_locator_id")
 	Long breachReporterId;
 	private String identifier;

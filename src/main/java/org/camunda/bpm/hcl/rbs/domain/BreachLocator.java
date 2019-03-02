@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Table(name="t_breach_locator")
 public class BreachLocator {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	//@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "breach_locator_id")
 	Long breachLocatorId;
 	private String franchise;
