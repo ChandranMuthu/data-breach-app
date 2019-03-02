@@ -1,4 +1,4 @@
-package org.camunda.bpm.hcl.rbs.security;
+/*package org.camunda.bpm.hcl.rbs.security;
 
 import org.camunda.bpm.hcl.rbs.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,3 +22,4 @@ public class AppUserDetailService implements UserDetailsService {
 	}
 }
 
+*/

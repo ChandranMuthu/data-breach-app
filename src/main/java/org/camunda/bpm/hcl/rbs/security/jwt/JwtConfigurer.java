@@ -1,4 +1,4 @@
-package org.camunda.bpm.hcl.rbs.security.jwt;
+/*package org.camunda.bpm.hcl.rbs.security.jwt;
 
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -18,4 +18,4 @@ public class JwtConfigurer extends SecurityConfigurerAdapter<DefaultSecurityFilt
         JwtTokenFilter customFilter = new JwtTokenFilter(jwtTokenProvider);
         http.addFilterBefore(customFilter, UsernamePasswordAuthenticationFilter.class);
     }
-}
+}*/

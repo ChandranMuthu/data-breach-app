@@ -1,4 +1,4 @@
-package org.camunda.bpm.hcl.rbs.security.jwt;
+/*package org.camunda.bpm.hcl.rbs.security.jwt;
 
 import io.jsonwebtoken.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -79,3 +79,4 @@ public class JwtTokenProvider {
         }
     }
 }
+*/

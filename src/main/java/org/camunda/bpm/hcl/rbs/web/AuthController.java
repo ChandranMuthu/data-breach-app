@@ -1,4 +1,4 @@
-package org.camunda.bpm.hcl.rbs.web;
+/*package org.camunda.bpm.hcl.rbs.web;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -51,3 +51,4 @@ public class AuthController {
         }
     }
 }
+*/

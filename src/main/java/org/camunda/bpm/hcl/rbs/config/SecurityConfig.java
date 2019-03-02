@@ -1,4 +1,4 @@
-package org.camunda.bpm.hcl.rbs.config;
+/*package org.camunda.bpm.hcl.rbs.config;
 
 import org.camunda.bpm.hcl.rbs.security.jwt.JwtConfigurer;
 import org.camunda.bpm.hcl.rbs.security.jwt.JwtTokenProvider;
@@ -49,3 +49,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
 }
+*/
