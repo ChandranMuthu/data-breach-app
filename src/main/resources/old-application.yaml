@@ -1,0 +1,14 @@
+camunda.bpm:
+  admin-user:
+    id: kermit
+    password: superSecret
+    firstName: Kermit
+  filter:
+    create: All tasks
+spring:
+  datasource:
+    driver-class-name:com.mysql.jdbc.Driver
+    url:jdbc:mysql://localhost/test
+    username:root
+    password:root
+ url:jdbc:mysql://localhost/test
