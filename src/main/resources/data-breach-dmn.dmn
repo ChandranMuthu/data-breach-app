@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" id="Definitions_0420sye" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="data-breach-dmn" name="Data Breach DMN">
+    <extensionElements>
+      <biodi:bounds x="150" y="150" width="180" height="80" />
+    </extensionElements>
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="franchise">
+        <inputExpression id="inputExpression_1" typeRef="string">
+          <text>franchise</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_117hkvc" label="businessArea">
+        <inputExpression id="LiteralExpression_1fcm1q8" typeRef="string">
+          <text>businessArea</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_024l34b" label="breachCategory">
+        <inputExpression id="LiteralExpression_1p7vqnf" typeRef="string">
+          <text>breachCategory</text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="risk" name="risk" typeRef="string" />
+      <rule id="DecisionRule_0ui4tkv">
+        <inputEntry id="UnaryTests_04a15ca">
+          <text>"private banking"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tudisl">
+          <text>"customer experience"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1h6u8tz">
+          <text>"loss of device/physical files"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1shj30s">
+          <text>"high"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10lt3yj">
+        <inputEntry id="UnaryTests_1dqkgze">
+          <text>"private banking"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_097yuyj">
+          <text>"business banking"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ooa4ca">
+          <text>"loss of device/physical files"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1k2bzps">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

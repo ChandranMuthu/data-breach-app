@@ -5,3 +5,4 @@ camunda.bpm:
     firstName: Kermit
   filter:
     create: All tasks
+  auto-deployment-enabled: true
