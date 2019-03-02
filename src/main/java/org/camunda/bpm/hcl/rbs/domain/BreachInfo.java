@@ -11,7 +11,6 @@ import javax.persistence.Table;
 @Table(name="t_breach_info")
 public class BreachInfo {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "breach_info_id")
 	Long breachInfoId;
 	private String breachStartTime;

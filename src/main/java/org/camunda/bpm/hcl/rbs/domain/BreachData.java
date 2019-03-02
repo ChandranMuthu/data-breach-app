@@ -14,7 +14,7 @@ public class BreachData {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "breach_data_id")
-	Long breachDataId;	
+	private Long breachDataId;	
 	private String franchise;
 	private String businessArea;
 	private String breachIdentifier;

@@ -1,6 +1,7 @@
 package org.camunda.bpm.hcl.rbs.core.services;
 
 import org.camunda.bpm.hcl.rbs.domain.BreachData;
+import org.camunda.bpm.hcl.rbs.request.BreachDataVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +16,7 @@ public class CoreController {
 	CoreServices coreServices;
 	
 	@PostMapping(value = "/breach-infos")
-    public ResponseEntity<String> persistBreachData(@RequestBody BreachData breachData) {
+    public ResponseEntity<String> persistBreachData(@RequestBody BreachDataVO breachData) {
 		coreServices.persistBreachData(breachData);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
