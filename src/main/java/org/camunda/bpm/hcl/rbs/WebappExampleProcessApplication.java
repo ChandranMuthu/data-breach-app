@@ -17,8 +17,10 @@ package org.camunda.bpm.hcl.rbs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan({"org.camunda.bpm.hcl.rbs.*"})
 public class WebappExampleProcessApplication {
 	public static void main(String... args) {
 		SpringApplication.run(WebappExampleProcessApplication.class, args);
